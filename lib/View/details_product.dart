@@ -64,7 +64,7 @@ class Details extends StatelessWidget {
         child: Icon(Icons.call),
         backgroundColor: Colors.green,
         onPressed: (){
-         
+
 
         },
       ),

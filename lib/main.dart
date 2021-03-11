@@ -22,10 +22,10 @@ class _splashState extends State<splash> {
           style: new TextStyle(
             fontWeight: FontWeight.bold,
             fontSize: 40,
-            color: Colors.white,
+            color: Colors.red,
           ),),
 
-        seconds: 10,
+        seconds: 7,
         navigateAfterSeconds: new Login(),
 
 
@@ -36,7 +36,7 @@ class _splashState extends State<splash> {
         backgroundColor: Colors.black,
         styleTextUnderTheLoader: new TextStyle(),
         photoSize: 100.0,
-        onClick: ()=>print("Flutter Egypt"),
+        onClick: ()=>print(" "),
         loaderColor: Colors.red
     );
   }
