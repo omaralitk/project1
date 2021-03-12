@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:login2/Model/user.dart';
 import 'package:login2/View/profile.dart';
 
+
 class Login extends StatefulWidget {
   @override
   _LoginState createState() => _LoginState();
@@ -26,7 +27,6 @@ class _LoginState extends State<Login> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
       appBar: AppBar(
         backgroundColor: Colors.white,
         elevation: 0,
@@ -99,7 +99,7 @@ class _LoginState extends State<Login> {
                       decoration: InputDecoration(
                         hintText: 'Example123*',
                         helperText:
-                        'Your Password must be 6 characters at least',
+                            'Your Password must be 6 characters at least',
                         labelText: 'Password',
                         prefixIcon: Icon(Icons.lock),
                         enabledBorder: OutlineInputBorder(
@@ -111,12 +111,13 @@ class _LoginState extends State<Login> {
                       ),
                     ),
                   ),
+
                 ],
               ),
             ),
             Padding(
               padding:
-              const EdgeInsets.symmetric(horizontal: 100, vertical: 60),
+                  const EdgeInsets.symmetric(horizontal: 100, vertical: 20),
               child: RaisedButton(
                 onPressed: () {
                   if (_formKey.currentState.validate()) {
@@ -129,8 +130,7 @@ class _LoginState extends State<Login> {
                     if (users[i].email == user.email &&
                         users[i].password == user.password)
                       Navigator.push(context,
-                          MaterialPageRoute(builder: (context) =>Profile()));
-
+                          MaterialPageRoute(builder: (context) => Profile()));
                   }
                 },
                 shape: RoundedRectangleBorder(
@@ -149,6 +149,5 @@ class _LoginState extends State<Login> {
         ),
       ),
     );
-
   }
 }
